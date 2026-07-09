@@ -1,65 +1,229 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2575.7">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
-  </style>
-</head>
-<body>
-<p class="p1">* { margin: 0; padding: 0; box-sizing: border-box; }</p>
-<p class="p1">html { scroll-behavior: smooth; }</p>
-<p class="p1">body { font-family: 'Inter', sans-serif; background-color: #FFFFFF; color: #111111; line-height: 1.6; -webkit-font-smoothing: antialiased; }</p>
-<p class="p1">.container { max-width: 1200px; margin: 0 auto; padding: 0 40px; }</p>
-<p class="p2"><br></p>
-<p class="p1">.navbar { position: fixed; top: 0; left: 0; width: 100%; background-color: rgba(255, 255, 255, 0.95); border-bottom: 1px solid #EAEAEA; z-index: 1000; }</p>
-<p class="p1">.nav-container { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 15px 40px; }</p>
-<p class="p1">.location { font-size: 11px; font-weight: 400; letter-spacing: 4px; color: #777777; }</p>
-<p class="p2"><br></p>
-<p class="p1">.hero { min-height: 90vh; display: flex; align-items: center; padding: 180px 40px 80px 40px; background-color: #FCFCFC; background-image: linear-gradient(rgba(252,252,252,0.88), rgba(252,252,252,0.88)), url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&amp;fit=crop&amp;w=1920&amp;q=80'); background-size: cover; background-position: center; }</p>
-<p class="p1">.hero-content { max-width: 850px; margin: 0 auto; text-align: center; }</p>
-<p class="p1">.hero h1 { font-size: 46px; font-weight: 100; line-height: 1.2; letter-spacing: -1px; margin-bottom: 30px; color: #111111; }</p>
-<p class="p1">.hero p { font-size: 17px; font-weight: 300; color: #555555; margin-bottom: 40px; line-height: 1.7; }</p>
-<p class="p1">.btn-primary { display: inline-block; padding: 18px 36px; background-color: #111111; color: #FFFFFF; text-decoration: none; font-size: 13px; font-weight: 400; letter-spacing: 2px; text-transform: uppercase; }</p>
-<p class="p2"><br></p>
-<p class="p1">.process-section { background-color: #F8F8F8; padding: 100px 0; border-top: 1px solid #EAEAEA; border-bottom: 1px solid #EAEAEA; }</p>
-<p class="p1">.section-title { font-size: 28px; font-weight: 300; letter-spacing: -0.5px; margin-bottom: 60px; color: #111111; }</p>
-<p class="p1">.process-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 50px; }</p>
-<p class="p1">.step-number { font-size: 14px; font-weight: 500; color: #999999; display: block; margin-bottom: 15px; letter-spacing: 1px; }</p>
-<p class="p1">.process-step h3 { font-size: 20px; font-weight: 400; margin-bottom: 15px; }</p>
-<p class="p1">.process-step p { font-size: 14px; color: #666666; font-weight: 300; }</p>
-<p class="p2"><br></p>
-<p class="p1">.portfolio-section { padding: 120px 0; }</p>
-<p class="p1">.product-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }</p>
-<p class="p1">.product-card { background-color: #FFFFFF; border: 1px solid #EAEAEA; }</p>
-<p class="p1">.product-image { height: 280px; background-size: cover; background-position: center; }</p>
-<p class="p1">.image-recinto { background-image: url('https://images.unsplash.com/photo-1590069261209-f8e9b8642343?auto=format&amp;fit=crop&amp;w=600&amp;q=80'); }</p>
-<p class="p1">.image-cantera { background-image: url('https://images.unsplash.com/photo-1533090161767-e6ffed986c88?auto=format&amp;fit=crop&amp;w=600&amp;q=80'); }</p>
-<p class="p1">.image-tile { background-image: url('https://images.unsplash.com/photo-1501183007986-d0d080b147f9?auto=format&amp;fit=crop&amp;w=600&amp;q=80'); }</p>
-<p class="p1">.product-info { padding: 30px; }</p>
-<p class="p1">.product-meta { font-size: 11px; color: #888888; text-transform: uppercase; letter-spacing: 1.5px; display: block; margin-bottom: 12px; }</p>
-<p class="p1">.product-info h3 { font-size: 20px; font-weight: 400; margin-bottom: 15px; color: #111111; }</p>
-<p class="p1">.product-info p { font-size: 14px; color: #555555; font-weight: 300; }</p>
-<p class="p2"><br></p>
-<p class="p1">.contact-section { padding: 60px 0 120px 0; background-color: #FFFFFF; }</p>
-<p class="p1">.contact-box { max-width: 650px; margin: 0 auto; background-color: #111111; padding: 60px; color: #FFFFFF; }</p>
-<p class="p1">.contact-box h2 { font-size: 32px; font-weight: 100; letter-spacing: -0.5px; margin-bottom: 15px; text-align: center; }</p>
-<p class="p1">.contact-box p { font-size: 14px; font-weight: 300; color: #999999; text-align: center; margin-bottom: 40px; }</p>
-<p class="p1">.lead-form .form-group { margin-bottom: 20px; }</p>
-<p class="p1">.lead-form input, .lead-form textarea { width: 100%; padding: 16px; background-color: #1A1A1A; border: 1px solid #333333; color: #FFFFFF; font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 300; }</p>
-<p class="p1">.btn-submit { width: 100%; padding: 18px; background-color: #FFFFFF; color: #111111; border: none; font-size: 13px; font-weight: 500; letter-spacing: 2px; cursor: pointer; margin-top: 10px; }</p>
-<p class="p2"><br></p>
-<p class="p1">.footer { border-top: 1px solid #EAEAEA; padding: 40px 0; text-align: center; }</p>
-<p class="p1">.footer p { font-size: 12px; color: #888888; font-weight: 300; }</p>
-<p class="p2"><br></p>
-<p class="p1">@media (max-width: 900px) {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.process-grid, .product-grid { grid-template-columns: 1fr; gap: 40px; }</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.hero h1 { font-size: 34px; }</p>
-<p class="p1">}</p>
-</body>
-</html>
+/* Reset y Fuentes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #0d0d0d;
+    color: #f5f5f5;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 0.5px;
+    overflow-x: hidden;
+}
+
+/* Navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+
+.logo {
+    font-family: 'Cinzel', serif;
+    font-size: 1.2rem;
+    letter-spacing: 4px;
+    font-weight: 600;
+}
+
+.nav-links a {
+    color: #8c8c8c;
+    text-decoration: none;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-left: 30px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffffff;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    background: #121212; /* Color sólido elegante de respaldo */
+}
+
+/* Capa de atmósfera oscura */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(13,13,13,0.95) 0%, rgba(20,20,20,0.6) 100%);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+}
+
+.subtitle {
+    font-size: 0.85rem;
+    color: #8c8c8c;
+    letter-spacing: 6px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 3.5rem;
+    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+    color: #ffffff;
+}
+
+.tagline {
+    font-size: 1.1rem;
+    color: #b3b3b3;
+    font-weight: 200;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 35px;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 3px;
+    transition: all 0.4s ease;
+}
+
+.btn:hover {
+    background-color: #ffffff;
+    color: #0d0d0d;
+}
+
+/* Galería de Materiales */
+.gallery-section {
+    padding: 100px 10%;
+    background-color: #0a0a0a;
+}
+
+.gallery-section h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.8rem;
+    letter-spacing: 4px;
+    text-align: center;
+    margin-bottom: 60px;
+    font-weight: 400;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+}
+
+.grid-item {
+    background-color: #121212;
+    padding: 20px;
+    border: 1px solid #1a1a1a;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.grid-item:hover {
+    transform: translateY(-5px);
+    border-color: #333333;
+}
+
+.item-image {
+    height: 350px;
+    background-color: #1a1a1a; /* Cuadro gris refinado para colocar fotos después */
+    margin-bottom: 20px;
+}
+
+/* Colores de fondo de muestra texturizados abstractos */
+.cantera { background: linear-gradient(45deg, #262626, #1f1f1f); }
+.block { background: linear-gradient(45deg, #1f1f1f, #141414); }
+.recinto { background: linear-gradient(45deg, #1a1a1a, #0f0f0f); }
+
+.grid-item h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.grid-item p {
+    font-size: 0.9rem;
+    color: #8c8c8c;
+    line-height: 1.5;
+    font-weight: 200;
+}
+
+/* Footer / Contacto */
+footer {
+    background-color: #050505;
+    padding: 80px 10% 40px 10%;
+    text-align: center;
+    border-top: 1px solid #121212;
+}
+
+.footer-content h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 2.2rem;
+    letter-spacing: 8px;
+    margin-bottom: 15px;
+}
+
+.footer-content p {
+    color: #666666;
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.contact-link {
+    color: #ffffff;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-bottom: 1px solid #333333;
+    padding-bottom: 5px;
+    transition: border-color 0.3s ease;
+}
+
+.contact-link:hover {
+    border-color: #ffffff;
+}
+
+.copyright {
+    margin-top: 60px;
+    font-size: 0.75rem;
+    color: #404040;
+    letter-spacing: 1px;
+}
+
+/* Responsivo para Celulares */
+@media (max-width: 768px) {
+    h1 { font-size: 2.5rem; }
+    .navbar { padding: 20px 5%; }
+    .hero { padding: 0 5%; }
+    .gallery-section { padding: 60px 5%; }
+}

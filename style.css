@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #000000;
     color: #ffffff;
@@ -12,7 +16,7 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-/* Navbar Style */
+/* Navbar Style with Logo integration */
 .navbar {
     padding: 2.5rem 6%;
     display: flex;
@@ -21,28 +25,62 @@ body {
     background-color: #000000;
 }
 
-.brand {
-    font-size: 1.1rem;
-    font-weight: 500;
-    letter-spacing: 2px;
+.brand-logo {
+    display: flex;
+    align-items: center;
 }
 
-.status-badge {
-    font-size: 0.8rem;
-    color: #888888;
-    border: 1px solid #222222;
-    padding: 6px 14px;
-    border-radius: 3px;
-    letter-spacing: 0.5px;
+.nav-logo-img {
+    height: 42px; /* Balanced proportion for header logo */
+    width: auto;
+    display: block;
 }
 
-/* Main Typography Header */
-.main-header {
-    padding: 7rem 6% 4rem 6%;
-    max-width: 52rem;
+.nav-cta-btn {
+    font-size: 0.85rem;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 10px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    letter-spacing: 0.2px;
+    transition: background-color 0.25s ease, border-color 0.25s ease;
 }
 
-.main-header h1 {
+.nav-cta-btn:hover {
+    background-color: #ffffff;
+    color: #000000;
+    border-color: #ffffff;
+}
+
+/* Two-Column Hero Showcase Layout */
+.hero-section {
+    padding: 6rem 6% 4rem 6%;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+@media (min-width: 992px) {
+    .hero-section {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .hero-content-left {
+        flex: 1;
+        max-width: 55%;
+    }
+    .hero-display-right {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}
+
+.hero-content-left h1 {
     font-size: 3.2rem;
     font-weight: 500;
     letter-spacing: -0.03em;
@@ -51,16 +89,23 @@ body {
     color: #ffffff;
 }
 
-.main-header .subtitle {
+.hero-content-left .subtitle {
     font-size: 1.15rem;
     line-height: 1.65;
     color: #888888;
     font-weight: 400;
 }
 
-/* Grid Framework */
+.giant-isotype {
+    max-height: 280px;
+    width: auto;
+    object-fit: contain;
+    opacity: 0.95;
+}
+
+/* Grid Framework for Catalog */
 .catalog-container {
-    padding: 0 6% 8rem 6%;
+    padding: 2rem 6% 8rem 6%;
 }
 
 .catalog-grid {
@@ -80,7 +125,7 @@ body {
     flex-direction: column;
 }
 
-/* Exact Image Container & Hover Reveal Overlay */
+/* Image Container & Hover Reveal Overlay */
 .card-image-container {
     width: 100%;
     aspect-ratio: 4 / 3;
@@ -153,9 +198,143 @@ body {
     font-weight: 300;
 }
 
+/* Technical Specification & Form Section */
+.procurement-section {
+    padding: 0 6% 6rem 6%;
+    background-color: #000000;
+}
+
+.section-divider {
+    width: 40px;
+    height: 1px;
+    background-color: #444444;
+    margin-bottom: 4rem;
+}
+
+.procurement-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+@media (min-width: 992px) {
+    .procurement-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .procurement-info-panel {
+        flex: 1;
+        max-width: 42%;
+    }
+    .procurement-form-panel {
+        flex: 1;
+        max-width: 50%;
+    }
+}
+
+.procurement-info-panel h2 {
+    font-size: 2.4rem;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    margin-bottom: 1.8rem;
+}
+
+.panel-desc {
+    font-size: 1.05rem;
+    color: #888888;
+    line-height: 1.6;
+    margin-bottom: 3.5rem;
+}
+
+/* Specs Bullet List matching exact layout */
+.specs-bullet-list {
+    list-style: none;
+}
+
+.specs-bullet-list li {
+    position: relative;
+    padding-left: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+.specs-bullet-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #555555;
+    font-size: 1.2rem;
+}
+
+.specs-bullet-list li strong {
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom: 0.25rem;
+}
+
+.specs-bullet-list li span {
+    font-size: 0.95rem;
+    color: #666666;
+}
+
+/* Minimalist Deep Black Form Styles */
+.dark-minimal-form .form-group {
+    margin-bottom: 2.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.dark-minimal-form label {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #666666;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.8rem;
+}
+
+.dark-minimal-form input,
+.dark-minimal-form textarea {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #222222;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 8px 0;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.dark-minimal-form input:focus,
+.dark-minimal-form textarea:focus {
+    border-color: #666666;
+}
+
+.form-submit-btn {
+    width: 100%;
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    font-family: inherit;
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    padding: 16px;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: background-color 0.25s ease;
+}
+
+.form-submit-btn:hover {
+    background-color: #cccccc;
+}
+
 /* Minimal Footer Layout */
 .main-footer {
-    padding: 6rem 6% 4rem 6%;
+    padding: 4rem 6% 3rem 6%;
     border-top: 1px solid #111111;
     background-color: #000000;
 }
@@ -164,7 +343,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
 }
 
 .footer-col h3 {
@@ -190,9 +369,10 @@ body {
     border-color: #ffffff;
 }
 
-.yvr p {
-    color: #555555;
-    font-size: 0.9rem;
+.YVR-location p {
+    color: #666666;
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
 }
 
 .footer-bottom {
@@ -202,8 +382,10 @@ body {
 
 @media (max-width: 768px) {
     .navbar { padding: 2rem 4%; }
-    .main-header { padding: 5rem 4% 3rem 4%; }
-    .main-header h1 { font-size: 2.2rem; }
-    .catalog-container { padding: 0 4% 5rem 4%; }
+    .hero-section { padding: 4rem 4% 2rem 4%; gap: 3rem;}
+    .hero-content-left h1 { font-size: 2.2rem; }
+    .giant-isotype { max-height: 180px; align-self: flex-start; }
+    .catalog-container { padding: 0 4% 4rem 4%; }
+    .procurement-section { padding: 0 4% 4rem 4%; }
     .footer-grid { flex-direction: column; gap: 3rem; }
 }

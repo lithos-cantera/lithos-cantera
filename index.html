@@ -11,19 +11,24 @@
 </head>
 <body>
 
-    <!-- Franja Superior Estilo Base 44 (Translúcida y Limpia) -->
+    <!-- Menú de Navegación Unificado -->
     <header class="site-header">
         <div class="header-inside">
             <div class="brand-logo">
                 <img src="negro.png" alt="Lithos Cantera Co." class="nav-logo-img">
             </div>
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link active">HOME</a>
+                <a href="our-story.html" class="nav-link">OUR STORY</a>
+                <a href="technical.html" class="nav-link">TECHNICAL SPECS</a>
+            </nav>
             <div class="header-location">
                 <span>VANCOUVER, BC / MEXICO CITY</span>
             </div>
         </div>
     </header>
 
-    <!-- Hero Section con Imagen de Fondo Texturizada y Botón Abajo -->
+    <!-- Hero Section -->
     <section class="hero-section">
         <div class="hero-overlay"></div>
         <div class="hero-container">
@@ -37,120 +42,74 @@
         </div>
     </section>
 
-    <!-- Catálogo en Grid Estable -->
+    <!-- Catálogo de Productos -->
     <main class="catalog-container">
         <div class="catalog-grid">
-            
-            <!-- Card 1: Premium Cantera -->
             <div class="product-card">
                 <div class="card-image-container">
                     <img src="cantera.jpg" alt="Premium Cantera" class="product-image">
-                    <div class="image-overlay">
-                        <span class="overlay-specs">ASTM Certified &bull; Custom Architectural Formats</span>
-                    </div>
+                    <div class="image-overlay"><span class="overlay-specs">ASTM Certified</span></div>
                 </div>
                 <div class="product-info">
                     <h2>Premium Cantera</h2>
-                    <p>Custom sizing and structural stone cladding optimized for contemporary exterior facades and luxury residential landscaping.</p>
+                    <p>Custom sizing and structural stone cladding optimized for contemporary exterior facades.</p>
                 </div>
             </div>
 
-            <!-- Card 2: Volcanic Tuff & Recinto -->
             <div class="product-card">
                 <div class="card-image-container">
-                    <img src="recinto.jpg" alt="Volcanic Tuff & Recinto Cladding" class="product-image">
-                    <div class="image-overlay">
-                        <span class="overlay-specs">ASTM C97 Certified &bull; High-Density Provenance</span>
-                    </div>
+                    <img src="recinto.jpg" alt="Volcanic Recinto" class="product-image">
+                    <div class="image-overlay"><span class="overlay-specs">ASTM C97 Certified</span></div>
                 </div>
                 <div class="product-info">
                     <h2>Volcanic Tuff & Recinto Cladding</h2>
-                    <p>High-density, freeze-thaw resistant basaltic elements engineered for severe exposure architectural facades and high-traffic paving across Canadian climates.</p>
+                    <p>High-density, freeze-thaw resistant basaltic elements engineered for severe exposure.</p>
                 </div>
             </div>
 
-            <!-- Card 3: Artisan Ceramic Tiles -->
             <div class="product-card">
                 <div class="card-image-container">
-                    <img src="tiles.jpg" alt="Hand-Glazed Artisan Architectural Tile" class="product-image">
-                    <div class="image-overlay">
-                        <span class="overlay-specs">V3/V4 High Variation &bull; Crazing Resistant</span>
-                    </div>
+                    <img src="tiles.jpg" alt="Artisan Tile" class="product-image">
+                    <div class="image-overlay"><span class="overlay-specs">V3/V4 High Variation</span></div>
                 </div>
                 <div class="product-info">
                     <h2>Artisan Architectural Tile</h2>
-                    <p>Artisan-crafted ceramic tiles featuring deliberate organic texture and high tonal variance. Curated sizes for premium kitchen and commercial backsplashes.</p>
+                    <p>Artisan-crafted ceramic tiles featuring deliberate organic texture and high tonal variance.</p>
                 </div>
             </div>
-
         </div>
     </main>
 
-    <!-- Formulario Técnico Estructurado -->
+    <!-- Formulario de Contacto Técnico -->
     <section id="procurement-form" class="procurement-section">
         <div class="section-divider"></div>
         <div class="procurement-container">
-            
             <div class="procurement-info-panel">
                 <h2>Project Specification & Sample Inquiries</h2>
                 <p class="panel-desc">Developing a premium project in Canada? Request a physical sample kit or technical datasheets tested for local building codes.</p>
-                
-                <ul class="specs-bullet-list">
-                    <li>
-                        <strong>Specification</strong>
-                        <span class="bullet-text">Material tolerances mapped to your structural drawings</span>
-                    </li>
-                    <li>
-                        <strong>Compliance</strong>
-                        <span class="bullet-text">NIMF 15 / ISPM 15 customs certification and ASTM freeze-thaw reports</span>
-                    </li>
-                    <li>
-                        <strong>Logistics</strong>
-                        <span class="bullet-text">Direct freight delivery coordinated to commercial and residential sites nationwide</span>
-                    </li>
-                </ul>
             </div>
-
             <div class="procurement-form-panel">
                 <form action="#" method="POST" class="dark-minimal-form">
-                    <div class="form-group">
-                        <label>NAME</label>
-                        <input type="text" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label>COMPANY / FIRM</label>
-                        <input type="text" name="company" required>
-                    </div>
-                    <div class="form-group">
-                        <label>EMAIL ADDRESS</label>
-                        <input type="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label>PROJECT REQUIREMENTS / MATERIAL SPECS</label>
-                        <textarea name="requirements" rows="4" required></textarea>
-                    </div>
+                    <div class="form-group"><label>NAME</label><input type="text" name="name" required></div>
+                    <div class="form-group"><label>COMPANY / FIRM</label><input type="text" name="company" required></div>
+                    <div class="form-group"><label>EMAIL ADDRESS</label><input type="email" name="email" required></div>
+                    <div class="form-group"><label>PROJECT REQUIREMENTS</label><textarea name="requirements" rows="4" required></textarea></div>
                     <button type="submit" class="form-submit-btn">SUBMIT PROCUREMENT REQUEST</button>
                 </form>
             </div>
-
         </div>
     </section>
 
-    <!-- Footer Corregido con tu Gmail Real -->
+    <!-- Footer -->
     <footer class="main-footer">
         <div class="footer-grid">
             <div class="footer-col">
                 <h3>Direct Inquiry</h3>
                 <a href="mailto:lithoscanteraco@gmail.com" class="email-link">lithoscanteraco@gmail.com</a>
             </div>
-            <div class="footer-col YVR-location">
-                <p>VANCOUVER, BC / MEXICO CITY</p>
-            </div>
+            <div class="footer-col YVR-location"><p>VANCOUVER, BC / MEXICO CITY</p></div>
         </div>
-        <div class="footer-bottom">
-            <p class="copyright-text">&copy; 2026 Lithos Cantera Co. All rights reserved.</p>
-        </div>
+        <div class="footer-bottom"><p class="copyright-text">&copy; 2026 Lithos Cantera Co. All rights reserved.</p></div>
     </footer>
-
 </body>
 </html>

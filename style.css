@@ -1,4 +1,4 @@
-/* --- RESET GENERAL --- */
+/* --- RESET GENERAL CORREGIDO --- */
 * {
     margin: 0;
     padding: 0;
@@ -27,20 +27,20 @@ body {
 .header-inside {
     max-width: 1400px;
     margin: 0 auto;
-    padding: 25px 40px; /* Más espacio vertical para que luzca premium */
+    padding: 25px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-/* LOGO IZQUIERDO CORREGIDO (YA NO ES MINÚSCULO) */
+/* LOGO IZQUIERDO MEJORADO: GRANDE Y VISIBLE */
 .brand-logo {
     display: flex;
     align-items: center;
 }
 
 .nav-logo-img {
-    height: 110px; /* Incrementado sustancialmente para que se entienda perfectamente */
+    height: 110px;
     width: auto;
     display: block;
     object-fit: contain;
@@ -71,7 +71,7 @@ body {
     letter-spacing: 1.5px;
 }
 
-/* --- HERO SECTION CON IMAGEN DE FONDO --- */
+/* --- HERO SECTION CON TEXTURA --- */
 .hero-section {
     position: relative;
     min-height: 100vh;
@@ -79,15 +79,12 @@ body {
     display: flex;
     align-items: center;
     padding-top: 120px;
-    
-    /* CAMBIA 'tu-imagen-de-fondo.jpg' POR EL NOMBRE REAL DE TU ARCHIVO DE FONDO */
-    background-image: url('tu-imagen-de-fondo.jpg'); 
+    background-image: url('hero-bg.jpg'); /* Tu fondo original fijo */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-/* Capa oscura para que el texto blanco siga siendo legible sobre la imagen */
 .hero-overlay {
     position: absolute;
     top: 0;
@@ -106,7 +103,7 @@ body {
     width: 100%;
 }
 
-/* Layout Estilo Split */
+/* Layout Split */
 .hero-split-layout {
     display: flex;
     justify-content: space-between;
@@ -114,7 +111,7 @@ body {
     gap: 60px;
 }
 
-/* Bloque Izquierdo de Contenido */
+/* Bloque Izquierdo */
 .hero-content-left {
     max-width: 55%;
 }
@@ -135,7 +132,7 @@ body {
     font-weight: 300;
 }
 
-/* Botón de Acción */
+/* Botón CTA */
 .hero-actions {
     display: flex;
 }
@@ -156,7 +153,7 @@ body {
     transform: translateY(-2px);
 }
 
-/* Columna del Icono Derecho */
+/* Columna del Icono Derecho Balanceado */
 .hero-content-right-logo {
     max-width: 40%;
     width: 100%;
@@ -166,10 +163,121 @@ body {
 }
 
 .hero-large-icon {
-    width: 260px; /* Tamaño destacado y proporcional */
+    width: 260px;
     height: auto;
     display: block;
     object-fit: contain;
+}
+
+/* --- SECCIÓN DE FORMULARIO --- */
+.form-section {
+    padding: 140px 40px;
+    background-color: #0b0b0b;
+    position: relative;
+    z-index: 10;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.form-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.form-container h2 {
+    font-size: 36px;
+    font-weight: 300;
+    letter-spacing: -0.5px;
+    margin-bottom: 15px;
+}
+
+.form-subtitle {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+    margin-bottom: 50px;
+    font-weight: 300;
+}
+
+/* Estilos de los inputs */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.form-group-row {
+    display: flex;
+    gap: 30px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.contact-form label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.contact-form input, 
+.contact-form select, 
+.contact-form textarea {
+    background-color: #121212;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 16px;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus, 
+.contact-form select:focus, 
+.contact-form textarea:focus {
+    outline: none;
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+.form-submit-btn {
+    background-color: #ffffff;
+    color: #0b0b0b;
+    border: none;
+    padding: 18px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background-color 0.3s ease;
+    align-self: flex-start;
+}
+
+.form-submit-btn:hover {
+    background-color: #e5e5e5;
+}
+
+/* --- FOOTER --- */
+.site-footer {
+    padding: 60px 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    background-color: #0b0b0b;
+}
+
+.footer-inside {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.footer-meta {
+    letter-spacing: 1px;
 }
 
 /* --- RESPONSIVO --- */
@@ -206,5 +314,14 @@ body {
     .hero-content-right-logo {
         max-width: 100%;
         justify-content: center;
+    }
+    .form-group-row {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .footer-inside {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
     }
 }

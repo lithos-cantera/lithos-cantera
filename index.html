@@ -28,17 +28,17 @@
         </div>
     </header>
 
-    <!-- Hero Section con tu imagen de fondo devuelta -->
+    <!-- Hero Section -->
     <section class="hero-section">
         <div class="hero-overlay"></div>
         <div class="hero-container hero-split-layout">
             
-            <!-- Columna Izquierda: Mensaje Principal -->
+            <!-- Columna Izquierda: Mensaje Principal Fijo -->
             <div class="hero-content-left">
-                <h1>Premium Mexican Architectural Surfaces for Canadian Landscapes.</h1>
+                <h1>Architectural Stone Sourcing & Distribution for West Coast Modernism.</h1>
                 <p class="subtitle">We source, verify, and deliver premium Mexican Cantera, high-density Volcanic Recinto, and custom artisan ceramic tiles directly to premier design and construction firms across Canada. Complete logistical procurement, technical compliance, and strict ASTM verification from source to site.</p>
                 <div class="hero-actions">
-                    <a href="#contact-section" class="hero-cta-solid">REQUEST SPECIFICATIONS & SAMPLES</a>
+                    <a href="#procurement-form" class="hero-cta-solid">REQUEST SPECIFICATIONS & SAMPLES</a>
                 </div>
             </div>
             
@@ -50,12 +50,63 @@
         </div>
     </section>
 
-    <!-- Sección de Contacto/Formulario para que funcione el botón -->
-    <section id="contact-section" style="padding: 100px 40px; max-width: 1400px; margin: 0 auto;">
-        <h2 style="font-weight: 300; font-size: 32px; margin-bottom: 20px; letter-spacing: -0.5px;">Procurement & Specifications</h2>
-        <p style="color: rgba(255,255,255,0.6); margin-bottom: 40px; font-weight: 300;">Contact our Vancouver or Mexico City office to request ASTM testing data, material samples, or project estimation.</p>
-        <!-- Aquí puedes meter los campos de tu formulario actual -->
+    <!-- Formulario de Contacto / Adquisición -->
+    <section id="procurement-form" class="form-section">
+        <div class="form-container">
+            <h2>Procurement & Specifications</h2>
+            <p class="form-subtitle">Contact our Vancouver or Mexico City office to request ASTM testing data, material samples, or project estimation.</p>
+            
+            <form action="#" method="POST" class="contact-form">
+                <div class="form-group-row">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Business Email</label>
+                        <input type="email" id="email" name="email" placeholder="john@company.com" required>
+                    </div>
+                </div>
+                
+                <div class="form-group-row">
+                    <div class="form-group">
+                        <label for="company">Company / Firm</label>
+                        <input type="text" id="company" name="company" placeholder="Architecture / Design Firm">
+                    </div>
+                    <div class="form-group">
+                        <label for="project">Project Location (City/Province)</label>
+                        <input type="text" id="project" name="project" placeholder="e.g. Vancouver, BC">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="material">Material of Interest</label>
+                    <select id="material" name="material">
+                        <option value="">Select a material...</option>
+                        <option value="cantera">Premium Mexican Cantera</option>
+                        <option value="recinto">High-Density Volcanic Recinto</option>
+                        <option value="ceramic">Custom Artisan Ceramic Tiles</option>
+                        <option value="other">Other / Custom Sourcing</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Project Details & Specification Requirements</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Describe your project scale, timeline, and material specifications..." required></textarea>
+                </div>
+
+                <button type="submit" class="form-submit-btn">SUBMIT REQUEST</button>
+            </form>
+        </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-inside">
+            <p>&copy; 2026 Lithos Cantera Co. All rights reserved.</p>
+            <p class="footer-meta">ASTM Compliant Sourcing • Vancouver • Mexico City</p>
+        </div>
+    </footer>
 
 </body>
 </html>

@@ -1,4 +1,4 @@
-/* Reset Extremo y Prevención de Desbordes Globales */
+/* Reset global y prevención de desbordes */
 * {
     margin: 0;
     padding: 0;
@@ -19,7 +19,7 @@ body {
     overflow-x: hidden;
 }
 
-/* Franja Superior Estilo Base 44 (Translúcida y Fina) */
+/* Header con Navegación Integrada */
 .site-header {
     position: absolute;
     top: 0;
@@ -50,6 +50,31 @@ body {
     object-fit: contain;
 }
 
+/* Links de navegación */
+.main-nav {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.nav-link {
+    color: #888888;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    transition: color 0.25s ease;
+}
+
+.nav-link:hover {
+    color: #ffffff;
+}
+
+.nav-link.active {
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 4px;
+}
+
 .header-location {
     font-size: 0.85rem;
     font-weight: 400;
@@ -57,21 +82,20 @@ body {
     letter-spacing: 0.08em;
 }
 
-/* Hero Section con Imagen de Fondo Real */
+/* Hero - Home */
 .hero-section {
     position: relative;
     width: 100%;
     min-height: 95vh;
     display: flex;
     align-items: center;
-    padding: 10rem 6% 6rem 6%;
+    padding: 12rem 6% 6rem 6%;
     background-image: url('hero-bg.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-/* Capa oscura intermedia para asegurar el contraste */
 .hero-overlay {
     position: absolute;
     top: 0;
@@ -110,12 +134,6 @@ body {
     margin-bottom: 3.5rem;
 }
 
-/* Botón Rectangular Sólido Blanco (Abajo a la izquierda estilo Base 44) */
-.hero-actions {
-    display: flex;
-    justify-content: flex-start;
-}
-
 .hero-cta-solid {
     display: inline-block;
     background-color: #ffffff;
@@ -132,7 +150,102 @@ body {
     background-color: #dddddd;
 }
 
-/* Grid de Productos */
+/* Páginas Internas */
+.internal-hero {
+    padding: 14rem 6% 8rem 6%;
+    min-height: 80vh;
+    background-color: #000000;
+}
+
+.internal-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.section-tag {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #666666;
+    letter-spacing: 0.12em;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+
+.internal-hero h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    margin-bottom: 4rem;
+    max-width: 800px;
+}
+
+/* Estructura - Story */
+.story-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+}
+
+@media (min-width: 768px) {
+    .story-layout {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .story-block {
+        flex: 1;
+        max-width: 46%;
+    }
+}
+
+.story-block h2 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+    color: #ffffff;
+}
+
+.story-block p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #888888;
+    font-weight: 300;
+}
+
+/* Estructura - Technical */
+.technical-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3rem;
+}
+
+@media (min-width: 768px) {
+    .technical-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+}
+
+.tech-card {
+    border-top: 1px solid #222222;
+    padding-top: 2rem;
+}
+
+.tech-card h3 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.tech-card p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #888888;
+    font-weight: 300;
+}
+
+/* Grid de Productos - Catálogo */
 .catalog-container {
     padding: 6rem 6% 8rem 6%;
     width: 100%;
@@ -195,7 +308,6 @@ body {
     opacity: 0;
     transform: translateY(10px);
     transition: opacity 0.3s ease, transform 0.3s ease;
-    text-align: center;
 }
 
 .product-card:hover .product-image { transform: scale(1.02); }
@@ -206,7 +318,6 @@ body {
     font-size: 1.35rem;
     font-weight: 500;
     margin-bottom: 0.75rem;
-    color: #ffffff;
 }
 
 .product-info p {
@@ -216,7 +327,7 @@ body {
     font-weight: 300;
 }
 
-/* Formulario Técnico */
+/* Sección de Formulario */
 .procurement-section {
     padding: 0 6% 8rem 6%;
     background-color: #000000;
@@ -234,23 +345,15 @@ body {
     display: flex;
     flex-direction: column;
     gap: 4rem;
-    width: 100%;
 }
 
 @media (min-width: 992px) {
     .procurement-container {
         flex-direction: row;
         justify-content: space-between;
-        gap: 4rem;
     }
-    .procurement-info-panel {
-        flex: 1;
-        max-width: 45%;
-    }
-    .procurement-form-panel {
-        flex: 1;
-        max-width: 48%;
-    }
+    .procurement-info-panel { flex: 1; max-width: 45%; }
+    .procurement-form-panel { flex: 1; max-width: 48%; }
 }
 
 .procurement-info-panel h2 {
@@ -258,51 +361,12 @@ body {
     font-weight: 500;
     line-height: 1.2;
     margin-bottom: 1.5rem;
-    letter-spacing: -0.02em;
 }
 
 .panel-desc {
     font-size: 1rem;
     color: #888888;
     line-height: 1.6;
-    margin-bottom: 3rem;
-}
-
-.specs-bullet-list {
-    list-style: none;
-}
-
-.specs-bullet-list li {
-    position: relative;
-    padding-left: 1.5rem;
-    margin-bottom: 1.8rem;
-}
-
-.specs-bullet-list li::before {
-    content: "•";
-    position: absolute;
-    left: 0;
-    top: 0;
-    color: #666666;
-    font-size: 1.2rem;
-}
-
-.specs-bullet-list li strong {
-    display: block;
-    font-size: 1rem;
-    font-weight: 500;
-    color: #ffffff;
-    margin-bottom: 0.2rem;
-}
-
-.bullet-text {
-    font-size: 0.95rem;
-    color: #888888;
-}
-
-/* Campos de Formulario */
-.dark-minimal-form {
-    width: 100%;
 }
 
 .dark-minimal-form .form-group {
@@ -329,9 +393,7 @@ body {
     font-size: 1rem;
     padding: 10px 0 !important;
     outline: none;
-    width: 100%;
     border-radius: 0 !important;
-    transition: border-color 0.3s ease;
 }
 
 .dark-minimal-form input:focus,
@@ -344,43 +406,31 @@ body {
     background-color: #ffffff !important;
     color: #000000 !important;
     border: none !important;
-    font-family: inherit;
     font-size: 0.85rem;
     font-weight: 600;
     letter-spacing: 0.08em;
     padding: 16px !important;
-    margin-top: 1rem;
     cursor: pointer;
-    transition: background-color 0.25s ease;
 }
 
-.form-submit-btn:hover {
-    background-color: #dddddd !important;
-}
-
-/* Footer */
+/* Footer Global */
 .main-footer {
     padding: 5rem 6% 3rem 6%;
     border-top: 1px solid #1c1c1c;
     background-color: #000000;
-    width: 100%;
 }
 
 .footer-grid {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
     margin-bottom: 4rem;
-    width: 100%;
 }
 
 .footer-col h3 {
     font-size: 0.8rem;
-    font-weight: 500;
     color: #666666;
     margin-bottom: 1.2rem;
     text-transform: uppercase;
-    letter-spacing: 0.08em;
 }
 
 .email-link {
@@ -389,53 +439,36 @@ body {
     text-decoration: none;
     border-bottom: 1px solid #333333;
     padding-bottom: 4px;
-    transition: border-color 0.25s ease;
 }
-
-.email-link:hover { border-color: #ffffff; }
 
 .YVR-location p {
     color: #888888;
     font-size: 0.85rem;
-    letter-spacing: 0.08em;
 }
 
 .copyright-text {
     font-size: 0.8rem !important;
     color: #888888 !important;
-    letter-spacing: 0.2px;
 }
 
-/* Ajustes Móvil */
+/* Adaptación Móvil */
 @media (max-width: 768px) {
     .header-inside {
-        padding: 1.5rem 4%;
         flex-direction: column;
-        gap: 1rem;
+        gap: 1.5rem;
         align-items: flex-start;
     }
-    .header-location {
-        font-size: 0.75rem;
+    .main-nav {
+        gap: 1.5rem;
     }
-    .hero-section {
-        padding: 12rem 4% 4rem 4%;
-        min-height: auto;
-    }
-    .hero-content-left {
-        max-width: 100%;
+    .hero-section, .internal-hero {
+        padding: 16rem 4% 4rem 4%;
     }
     .hero-content-left h1 {
         font-size: 2.2rem;
     }
-    .hero-cta-solid {
-        width: 100%;
-        text-align: center;
-    }
-    .catalog-container {
-        padding: 4rem 4% 4rem 4%;
-    }
-    .procurement-section {
-        padding: 0 4% 4rem 4%;
+    .internal-hero h1 {
+        font-size: 2rem;
     }
     .footer-grid {
         flex-direction: column;

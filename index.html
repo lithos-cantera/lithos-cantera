@@ -11,7 +11,7 @@
 </head>
 <body>
 
-    <!-- Premium Navbar -->
+    <!-- Navbar Controlado -->
     <nav class="navbar">
         <div class="brand-logo">
             <img src="negro.png" alt="Lithos Cantera Co." class="nav-logo-img">
@@ -21,18 +21,20 @@
         </div>
     </nav>
 
-    <!-- Hero Showcase Section (Two Columns) -->
+    <!-- Hero Section con Contenedores Flex Rígidos -->
     <header class="hero-section">
         <div class="hero-content-left">
             <h1>Architectural Stone Sourcing & Distribution for West Coast Modernism.</h1>
             <p class="subtitle">We source, verify, and deliver premium Mexican Cantera, high-density Volcanic Recinto, and custom artisan ceramic tiles directly to premier design and construction firms in British Columbia. Complete logistical procurement, technical compliance, and strict ASTM verification from source to site.</p>
         </div>
         <div class="hero-display-right">
-            <img src="negro icono solo.png" alt="Lithos Isotype" class="giant-isotype">
+            <div class="isotype-wrapper">
+                <img src="negro icono solo.png" alt="Lithos Isotype" class="giant-isotype">
+            </div>
         </div>
     </header>
 
-    <!-- Product Catalog Grid -->
+    <!-- Catálogo en Grid Estable -->
     <main class="catalog-container">
         <div class="catalog-grid">
             
@@ -81,7 +83,7 @@
         </div>
     </main>
 
-    <!-- Technical Specification & Inquiry Form Section -->
+    <!-- Formulario Técnico Estructurado -->
     <section id="procurement-form" class="procurement-section">
         <div class="section-divider"></div>
         <div class="procurement-container">
@@ -93,15 +95,15 @@
                 <ul class="specs-bullet-list">
                     <li>
                         <strong>Specification</strong>
-                        <span>Material tolerances mapped to your drawings</span>
+                        <span class="bullet-text">Material tolerances mapped to your drawings</span>
                     </li>
                     <li>
                         <strong>Compliance</strong>
-                        <span>NIMF 15 / ISPM 15 customs certification</span>
+                        <span class="bullet-text">NIMF 15 / ISPM 15 customs certification</span>
                     </li>
                     <li>
                         <strong>Logistics</strong>
-                        <span>Flatbed delivery to Lower Mainland sites</span>
+                        <span class="bullet-text">Flatbed delivery to Lower Mainland sites</span>
                     </li>
                 </ul>
             </div>
@@ -109,20 +111,20 @@
             <div class="procurement-form-panel">
                 <form action="#" method="POST" class="dark-minimal-form">
                     <div class="form-group">
-                        <label for="name">NAME</label>
-                        <input type="text" id="name" name="name" required>
+                        <label>NAME</label>
+                        <input type="text" name="name" required>
                     </div>
                     <div class="form-group">
-                        <label for="company">COMPANY / FIRM</label>
-                        <input type="text" id="company" name="company" required>
+                        <label>COMPANY / FIRM</label>
+                        <input type="text" name="company" required>
                     </div>
                     <div class="form-group">
-                        <label for="email">EMAIL ADDRESS</label>
-                        <input type="email" id="email" name="email" required>
+                        <label>EMAIL ADDRESS</label>
+                        <input type="email" name="email" required>
                     </div>
                     <div class="form-group">
-                        <label for="requirements">PROJECT REQUIREMENTS / MATERIAL SPECS</label>
-                        <textarea id="requirements" name="requirements" rows="4" required></textarea>
+                        <label>PROJECT REQUIREMENTS / MATERIAL SPECS</label>
+                        <textarea name="requirements" rows="4" required></textarea>
                     </div>
                     <button type="submit" class="form-submit-btn">SUBMIT PROCUREMENT REQUEST</button>
                 </form>
@@ -131,7 +133,7 @@
         </div>
     </section>
 
-    <!-- Institutional Footer -->
+    <!-- Footer Legible con Visibilidad de Copyright Corregida -->
     <footer class="main-footer">
         <div class="footer-grid">
             <div class="footer-col">
@@ -143,7 +145,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 Lithos Cantera. All rights reserved.</p>
+            <p class="copyright-text">&copy; 2026 Lithos Cantera. All rights reserved.</p>
         </div>
     </footer>
 

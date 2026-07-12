@@ -1,4 +1,4 @@
-/* --- RESET GENERAL CORREGIDO --- */
+/* --- RESET GENERAL --- */
 * {
     margin: 0;
     padding: 0;
@@ -33,7 +33,6 @@ body {
     align-items: center;
 }
 
-/* LOGO IZQUIERDO: GRANDE Y VISIBLE */
 .brand-logo {
     display: flex;
     align-items: center;
@@ -46,7 +45,6 @@ body {
     object-fit: contain;
 }
 
-/* Enlaces del Menú */
 .main-nav {
     display: flex;
     gap: 40px;
@@ -71,7 +69,7 @@ body {
     letter-spacing: 1.5px;
 }
 
-/* --- HERO SECTION CON TEXTURA TRASERA CORREGIDA --- */
+/* --- HERO SECTION --- */
 .hero-section {
     position: relative;
     min-height: 100vh;
@@ -86,7 +84,6 @@ body {
     background-color: #0b0b0b;
 }
 
-/* Capa de degradado */
 .hero-overlay {
     position: absolute;
     top: 0;
@@ -97,7 +94,6 @@ body {
     z-index: 1;
 }
 
-/* Contenedor principal por encima de la capa oscura */
 .hero-container {
     max-width: 1400px;
     margin: 0 auto;
@@ -107,7 +103,6 @@ body {
     width: 100%;
 }
 
-/* Layout Split */
 .hero-split-layout {
     display: flex;
     justify-content: space-between;
@@ -115,7 +110,6 @@ body {
     gap: 60px;
 }
 
-/* Bloque Izquierdo */
 .hero-content-left {
     max-width: 55%;
 }
@@ -136,7 +130,6 @@ body {
     font-weight: 300;
 }
 
-/* Botón CTA */
 .hero-actions {
     display: flex;
 }
@@ -157,7 +150,6 @@ body {
     transform: translateY(-2px);
 }
 
-/* Columna del Icono Derecho Balanceado */
 .hero-content-right-logo {
     max-width: 40%;
     width: 100%;
@@ -173,7 +165,7 @@ body {
     object-fit: contain;
 }
 
-/* --- SECCIÓN DE CATÁLOGO / MATERIALES (NUEVO) --- */
+/* --- SECCIÓN DE CATÁLOGO / MATERIALES --- */
 .catalog-section {
     padding: 120px 40px;
     background-color: #0f0f0f;
@@ -230,7 +222,6 @@ body {
     transition: transform 0.5s ease;
 }
 
-/* Efecto Hover en las imágenes */
 .card-hover-overlay {
     position: absolute;
     top: 0;
@@ -307,7 +298,6 @@ body {
     font-weight: 300;
 }
 
-/* Estilos de los inputs */
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -390,7 +380,7 @@ body {
     letter-spacing: 1px;
 }
 
-/* --- RESPONSIVO OPTIMIZADO PARA MÓVIL --- */
+/* --- RESPONSIVO --- */
 @media (max-width: 1024px) {
     .hero-content-left h1 {
         font-size: 38px;
@@ -409,11 +399,10 @@ body {
 @media (max-width: 768px) {
     .header-inside {
         padding: 15px 20px;
-        flex-direction: column; /* Alineación vertical para móvil para que quepa todo */
+        flex-direction: column;
         gap: 15px;
     }
     
-    /* El menú no desaparece; se convierte en pestañas visibles en móvil */
     .main-nav {
         display: flex;
         gap: 20px;
@@ -427,7 +416,7 @@ body {
     }
 
     .header-location {
-        display: none; /* Ocultamos solo la ubicación para ganar espacio */
+        display: none;
     }
 
     .nav-logo-img {
@@ -450,7 +439,7 @@ body {
     }
 
     .catalog-grid {
-        grid-template-columns: 1fr; /* Una columna en pantallas chicas */
+        grid-template-columns: 1fr;
     }
 
     .form-group-row {

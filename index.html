@@ -1,154 +1,636 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lithos Cantera Co. | Premium Mexican Architectural Surfaces</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Lithos Cantera Co. | Mexican Architectural Materials for Canada
+    </title>
+
+    <meta
+        name="description"
+        content="Natural stone, artisan architectural ceramics and clay roof tile sourced from selected Mexican quarries and manufacturers for architectural projects across Canada."
+    >
+
+    <meta
+        property="og:title"
+        content="Lithos Cantera Co. | Architectural Materials"
+    >
+
+    <meta
+        property="og:description"
+        content="Mexican natural stone, architectural ceramics, custom fabrication and clay roof tile for Canadian projects."
+    >
+
+    <meta
+        property="og:type"
+        content="website"
+    >
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap"
+        rel="stylesheet"
+    >
 </head>
+
+
 <body>
 
-    <!-- Menú de Navegación Superior -->
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
     <header class="site-header">
+
         <div class="header-inside">
-            <div class="brand-logo">
-                <img src="Lithos Cantera Co blanco transparente.png" alt="Lithos Cantera Co." class="nav-logo-img">
-            </div>
+
+            <a
+                href="index.html"
+                class="brand-logo"
+                aria-label="Lithos Cantera Co. Home"
+            >
+                <img
+                    src="Lithos Cantera Co blanco transparente.png"
+                    alt="Lithos Cantera Co."
+                    class="nav-logo-img"
+                >
+            </a>
+
 
             <nav class="main-nav">
-                <a href="index.html" class="nav-link active">HOME</a>
-                <a href="our-story.html" class="nav-link">OUR STORY</a>
-                <a href="technical.html" class="nav-link">TECHNICAL SPECS</a>
+
+                <a
+                    href="#materials"
+                    class="nav-link"
+                >
+                    MATERIALS
+                </a>
+
+                <a
+                    href="our-story.html"
+                    class="nav-link"
+                >
+                    OUR STORY
+                </a>
+
+                <a
+                    href="technical.html"
+                    class="nav-link"
+                >
+                    TECHNICAL
+                </a>
+
+                <button
+                    type="button"
+                    class="nav-catalogue-btn open-catalogue-modal"
+                >
+                    CATALOGUE
+                </button>
+
             </nav>
 
+
             <div class="header-location">
-                <span>VANCOUVER, BC / MEXICO CITY / MONTREAL, QC</span>
+                <span>VANCOUVER, BC / MEXICO</span>
             </div>
+
         </div>
+
     </header>
 
-    <!-- Hero Section -->
+
+
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
+
     <section class="hero-section">
+
         <div class="hero-overlay"></div>
 
-        <div class="hero-container hero-split-layout">
 
-            <!-- Columna Izquierda: Mensaje Principal -->
+        <div class="hero-container">
+
             <div class="hero-content-left">
-                <h1>Architectural Stone Sourcing & Distribution Across Canada.</h1>
 
-                <p class="subtitle">
-                    We source, verify, and deliver premium Mexican Cantera, high-density Volcanic Recinto,
-                    and custom artisan ceramic tiles directly to premier design and construction firms
-                    across Canada. Complete logistical procurement, technical compliance, and strict ASTM
-                    verification from source to site.
+                <p class="hero-eyebrow">
+                    ARCHITECTURAL MATERIALS · MEXICO → CANADA
                 </p>
 
-                <div class="hero-actions">
-                    <a href="#procurement-form" class="hero-cta-solid">
-                        REQUEST SPECIFICATIONS & SAMPLES
-                    </a>
-                </div>
-            </div>
 
-            <!-- Columna Derecha: Icono -->
-            <div class="hero-content-right-logo">
-                <img src="Icono blanco solo transparente.png" alt="Lithos Icon" class="hero-large-icon">
+                <h1>
+                    Mexican Architectural Materials for Canadian Projects.
+                </h1>
+
+
+                <p class="subtitle">
+                    Natural stone, artisan architectural ceramics and clay roof
+                    tile sourced from selected Mexican quarries and manufacturers.
+                    Lithos coordinates project-specific sourcing, logistics,
+                    ASTM-based technical documentation and testing requirements
+                    from source to site.
+                </p>
+
+
+                <div class="hero-actions">
+
+                    <button
+                        type="button"
+                        class="hero-cta-solid open-catalogue-modal"
+                    >
+                        DOWNLOAD CATALOGUE
+                    </button>
+
+
+                    <a
+                        href="#procurement-form"
+                        class="hero-cta-outline"
+                    >
+                        REQUEST A QUOTE
+                    </a>
+
+                </div>
+
             </div>
 
         </div>
+
     </section>
 
-    <!-- Sección de Catálogo / Materiales con Enlaces a Specs -->
-    <section class="catalog-section">
+
+
+    <!-- =====================================================
+         MATERIAL PORTFOLIO
+    ====================================================== -->
+
+    <section
+        class="catalog-section"
+        id="materials"
+    >
+
         <div class="catalog-container">
 
-            <h2 class="section-title">Material Portfolio</h2>
+            <div class="section-heading-row">
 
-            <p class="section-subtitle">
-                Architectural surfaces verified for harsh northern climates and high-end modern applications.
-            </p>
+                <div>
+
+                    <p class="section-eyebrow">
+                        MATERIAL PORTFOLIO
+                    </p>
+
+                    <h2 class="section-title">
+                        Materials selected for architectural projects.
+                    </h2>
+
+                </div>
+
+
+                <p class="section-intro">
+                    Natural stone, architectural ceramics and clay roof products
+                    sourced on a project basis, with custom formats, finishes and
+                    fabrication coordinated according to project requirements.
+                </p>
+
+            </div>
+
+
 
             <div class="catalog-grid">
 
-                <!-- Tarjeta 1: Cantera -->
-                <a href="technical.html#cantera-specs" class="catalog-card" style="text-decoration: none; color: inherit;">
-                    <div class="card-image-wrapper">
-                        <img src="cantera.jpg" alt="Mexican Cantera" class="card-img">
 
-                        <div class="card-hover-overlay">
-                            <span class="hover-text">View Specs</span>
-                        </div>
+                <!-- 01 BASALT -->
+
+                <article class="catalog-card">
+
+                    <div class="card-image-wrapper">
+
+                        <img
+                            src="basalt.jpg"
+                            alt="Mexican architectural basalt"
+                            class="card-img"
+                        >
+
+                        <span class="card-number">
+                            01
+                        </span>
+
                     </div>
+
 
                     <div class="card-info">
-                        <h3>Premium Cantera</h3>
+
+                        <h3>
+                            Basalt
+                        </h3>
+
                         <p>
-                            Tactile, porous volcanic stone offering rich textures and timeless structural beauty.
+                            Dense volcanic stone for exterior paving, wall
+                            cladding, pool environments and custom architectural
+                            fabrication.
                         </p>
-                    </div>
-                </a>
 
-                <!-- Tarjeta 2: Recinto -->
-                <a href="technical.html#recinto-specs" class="catalog-card" style="text-decoration: none; color: inherit;">
+                        <span class="card-use">
+                            PAVING · CLADDING · CUSTOM
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- 02 TRAVERTINES -->
+
+                <article class="catalog-card">
+
                     <div class="card-image-wrapper">
-                        <img src="recinto.jpg" alt="Volcanic Recinto" class="card-img">
 
-                        <div class="card-hover-overlay">
-                            <span class="hover-text">View Specs</span>
-                        </div>
+                        <img
+                            src="travertine.jpg"
+                            alt="Mexican architectural travertine"
+                            class="card-img"
+                        >
+
+                        <span class="card-number">
+                            02
+                        </span>
+
                     </div>
+
 
                     <div class="card-info">
-                        <h3>Volcanic Recinto</h3>
+
+                        <h3>
+                            Travertines
+                        </h3>
+
                         <p>
-                            High-density basaltic stone providing exceptional durability and sleek minimalist grey tones.
+                            Natural crosscut and veincut surfaces for flooring,
+                            walls, fireplaces, bathrooms and exterior applications.
                         </p>
-                    </div>
-                </a>
 
-                <!-- Tarjeta 3: Tiles -->
-                <a href="technical.html#tiles-specs" class="catalog-card" style="text-decoration: none; color: inherit;">
+                        <span class="card-use">
+                            FLOORING · WALLS · FIREPLACES
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- 03 LIMESTONE -->
+
+                <article class="catalog-card">
+
                     <div class="card-image-wrapper">
-                        <img src="tiles.jpg" alt="Artisan Tiles" class="card-img">
 
-                        <div class="card-hover-overlay">
-                            <span class="hover-text">View Specs</span>
-                        </div>
+                        <img
+                            src="limestone.jpg"
+                            alt="Mexican architectural limestone"
+                            class="card-img"
+                        >
+
+                        <span class="card-number">
+                            03
+                        </span>
+
                     </div>
+
 
                     <div class="card-info">
-                        <h3>Artisan Ceramic Tiles</h3>
+
+                        <h3>
+                            Limestone
+                        </h3>
+
                         <p>
-                            Custom-glazed, hand-formed pieces bridging heritage craftsmanship with modern design panels.
+                            Refined natural stone for flooring, façades,
+                            architectural paving, fireplaces and custom elements.
                         </p>
+
+                        <span class="card-use">
+                            FAÇADES · PAVING · INTERIORS
+                        </span>
+
                     </div>
+
+                </article>
+
+
+
+                <!-- 04 FINISHES / CUSTOM -->
+
+                <article class="catalog-card">
+
+                    <div class="card-image-wrapper">
+
+                        <img
+                            src="architectural-finishes.jpg"
+                            alt="Custom architectural stone finishes"
+                            class="card-img"
+                        >
+
+                        <span class="card-number">
+                            04
+                        </span>
+
+                    </div>
+
+
+                    <div class="card-info">
+
+                        <h3>
+                            Architectural Finishes & Custom Fabrication
+                        </h3>
+
+                        <p>
+                            Profiles, textured finishes, steps, coping, carved
+                            elements and project-specific stone fabrication.
+                        </p>
+
+                        <span class="card-use">
+                            PROFILES · STEPS · CUSTOM
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- 05 MARBLE -->
+
+                <article class="catalog-card">
+
+                    <div class="card-image-wrapper">
+
+                        <img
+                            src="marble-decorative-stone.jpg"
+                            alt="Mexican marble and decorative stone"
+                            class="card-img"
+                        >
+
+                        <span class="card-number">
+                            05
+                        </span>
+
+                    </div>
+
+
+                    <div class="card-info">
+
+                        <h3>
+                            Marbles & Decorative Stone
+                        </h3>
+
+                        <p>
+                            Expressive natural surfaces for feature walls,
+                            fireplaces, bathrooms, furniture and selected
+                            exterior applications.
+                        </p>
+
+                        <span class="card-use">
+                            MARBLE · ONYX · FEATURE STONE
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- 06 CERAMICS -->
+
+                <article class="catalog-card">
+
+                    <div class="card-image-wrapper">
+
+                        <img
+                            src="architectural-ceramics.jpg"
+                            alt="Mexican artisan architectural ceramics"
+                            class="card-img"
+                        >
+
+                        <span class="card-number">
+                            06
+                        </span>
+
+                    </div>
+
+
+                    <div class="card-info">
+
+                        <h3>
+                            Artisan Architectural Ceramics
+                        </h3>
+
+                        <p>
+                            Handcrafted and glazed ceramic surfaces for kitchens,
+                            bathrooms, hospitality spaces and architectural
+                            feature walls.
+                        </p>
+
+                        <span class="card-use">
+                            TALAVERA · GLAZED TILE · WALL TILE
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- 07 ROOF TILE -->
+
+                <article class="catalog-card">
+
+                    <div class="card-image-wrapper">
+
+                        <img
+                            src="clay-roof-tile.jpg"
+                            alt="Mexican clay roof tile"
+                            class="card-img"
+                        >
+
+                        <span class="card-number">
+                            07
+                        </span>
+
+                    </div>
+
+
+                    <div class="card-info">
+
+                        <h3>
+                            Clay Roof Tiles
+                        </h3>
+
+                        <p>
+                            100% clay roofing in traditional and contemporary
+                            profiles, available in multiple colours, blends and
+                            architectural finishes.
+                        </p>
+
+                        <span class="card-use">
+                            MISSION · LUSA · COLONIAL · FLAT
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- CATALOGUE CARD -->
+
+                <article class="catalog-card catalogue-feature-card">
+
+                    <div class="catalogue-feature-inner">
+
+                        <p class="catalogue-card-label">
+                            LITHOS COLLECTION 2026
+                        </p>
+
+                        <h3>
+                            Explore the complete material collection.
+                        </h3>
+
+                        <p>
+                            View available materials, formats, finishes,
+                            applications and technical information in the complete
+                            Lithos architectural catalogue.
+                        </p>
+
+                        <button
+                            type="button"
+                            class="catalogue-inline-btn open-catalogue-modal"
+                        >
+                            DOWNLOAD CATALOGUE
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         TECHNICAL / ASTM STRIP
+    ====================================================== -->
+
+    <section class="technical-strip">
+
+        <div class="technical-strip-inner">
+
+            <div class="technical-strip-heading">
+
+                <p class="section-eyebrow">
+                    TECHNICAL SUPPORT
+                </p>
+
+                <h2>
+                    Material documentation for real project requirements.
+                </h2>
+
+            </div>
+
+
+            <div class="technical-strip-copy">
+
+                <p>
+                    Selected materials are supported by ASTM testing and existing
+                    technical documentation. Additional project-specific testing,
+                    specifications and documentation can be coordinated according
+                    to material, application and project requirements.
+                </p>
+
+                <a
+                    href="technical.html"
+                    class="text-link"
+                >
+                    VIEW TECHNICAL INFORMATION →
                 </a>
 
             </div>
+
         </div>
+
     </section>
 
-    <!-- Formulario de Contacto / Adquisición -->
-    <section id="procurement-form" class="form-section">
+
+
+    <!-- =====================================================
+         PROJECT / RFQ FORM
+    ====================================================== -->
+
+    <section
+        id="procurement-form"
+        class="form-section"
+    >
+
         <div class="form-container">
 
-            <h2>Procurement & Specifications</h2>
-
-            <p class="form-subtitle">
-                Contact our Vancouver, Mexico City or Montreal team to request ASTM testing data,
-                material samples, or project estimation.
+            <p class="section-eyebrow">
+                PROJECT ENQUIRIES
             </p>
 
-            <form id="contactForm" class="contact-form">
+
+            <h2>
+                Request Pricing, Specifications or Samples.
+            </h2>
+
+
+            <p class="form-subtitle">
+                Tell us what your project requires. Lithos can coordinate
+                material pricing, technical documentation, ASTM information,
+                custom fabrication, samples and project-specific logistics.
+            </p>
+
+
+            <form
+                id="contactForm"
+                class="contact-form"
+            >
+
 
                 <div class="form-group-row">
 
                     <div class="form-group">
-                        <label for="name">Full Name</label>
+
+                        <label for="name">
+                            Full Name
+                        </label>
 
                         <input
                             type="text"
@@ -157,10 +639,15 @@
                             placeholder="John Doe"
                             required
                         >
+
                     </div>
 
+
                     <div class="form-group">
-                        <label for="email">Business Email</label>
+
+                        <label for="email">
+                            Business Email
+                        </label>
 
                         <input
                             type="email"
@@ -169,59 +656,140 @@
                             placeholder="john@company.com"
                             required
                         >
+
                     </div>
 
                 </div>
 
+
+
                 <div class="form-group-row">
 
                     <div class="form-group">
-                        <label for="company">Company / Firm</label>
+
+                        <label for="company">
+                            Company / Firm
+                        </label>
 
                         <input
                             type="text"
                             id="company"
                             name="company"
-                            placeholder="Architecture / Design Firm"
+                            placeholder="Architecture / Design / Construction"
                         >
+
                     </div>
 
+
                     <div class="form-group">
-                        <label for="project_location">Project Location (City/Province)</label>
+
+                        <label for="project_location">
+                            Project Location
+                        </label>
 
                         <input
                             type="text"
                             id="project_location"
                             name="project_location"
-                            placeholder="e.g. Vancouver, BC"
+                            placeholder="Vancouver, BC"
                         >
+
                     </div>
 
                 </div>
 
-                <div class="form-group">
-                    <label for="material">Material of Interest</label>
 
-                    <select id="material" name="material">
-                        <option value="">Select a material...</option>
-                        <option value="cantera">Premium Mexican Cantera</option>
-                        <option value="recinto">High-Density Volcanic Recinto</option>
-                        <option value="ceramic">Custom Artisan Ceramic Tiles</option>
-                        <option value="other">Other / Custom Sourcing</option>
-                    </select>
+
+                <div class="form-group-row">
+
+                    <div class="form-group">
+
+                        <label for="material">
+                            Material of Interest
+                        </label>
+
+                        <select
+                            id="material"
+                            name="material"
+                        >
+
+                            <option value="">
+                                Select a material...
+                            </option>
+
+                            <option value="basalt">
+                                Basalt
+                            </option>
+
+                            <option value="travertine">
+                                Travertine
+                            </option>
+
+                            <option value="limestone">
+                                Limestone
+                            </option>
+
+                            <option value="marble_decorative">
+                                Marble / Decorative Stone
+                            </option>
+
+                            <option value="ceramics">
+                                Architectural Ceramics
+                            </option>
+
+                            <option value="clay_roof_tile">
+                                Clay Roof Tile
+                            </option>
+
+                            <option value="custom_fabrication">
+                                Custom Stone Fabrication
+                            </option>
+
+                            <option value="other">
+                                Not Sure / Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="estimated_quantity">
+                            Estimated Quantity
+                        </label>
+
+                        <input
+                            type="text"
+                            id="estimated_quantity"
+                            name="estimated_quantity"
+                            placeholder="e.g. 1,500 sq ft"
+                        >
+
+                    </div>
+
                 </div>
 
+
+
                 <div class="form-group">
-                    <label for="project_details">Project Details & Specification Requirements</label>
+
+                    <label for="project_details">
+                        Project Details & Requirements
+                    </label>
 
                     <textarea
                         id="project_details"
                         name="project_details"
                         rows="5"
-                        placeholder="Tell us briefly about your project and material requirements..."
+                        placeholder="Material, finish, dimensions, application, required date or any other project information..."
                         required
                     ></textarea>
+
                 </div>
+
+
 
                 <button
                     type="submit"
@@ -231,84 +799,640 @@
                     SUBMIT REQUEST
                 </button>
 
+
                 <p
                     id="formStatus"
-                    style="display:none; margin-top:20px;"
+                    class="form-status"
+                    style="display:none;"
                 ></p>
 
             </form>
+
         </div>
+
     </section>
 
-    <!-- Footer -->
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
     <footer class="site-footer">
+
         <div class="footer-inside">
 
-            <p>&copy; 2026 Lithos Cantera Co. All rights reserved.</p>
+            <p>
+                &copy; 2026 Lithos Cantera Co. All rights reserved.
+            </p>
+
 
             <p class="footer-meta">
-                ASTM Compliant Sourcing • Vancouver • Mexico City • Montreal
+                PROJECT-BASED SOURCING · ASTM TECHNICAL DOCUMENTATION · CANADA / MEXICO
             </p>
 
         </div>
+
     </footer>
 
-    <!-- Conexión del formulario con Google Sheets -->
+
+
+    <!-- =====================================================
+         CATALOGUE LEAD MODAL
+    ====================================================== -->
+
+    <div
+        class="catalogue-modal"
+        id="catalogueModal"
+        aria-hidden="true"
+    >
+
+        <div
+            class="catalogue-modal-backdrop"
+            id="catalogueModalBackdrop"
+        ></div>
+
+
+        <div
+            class="catalogue-modal-dialog"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="catalogueModalTitle"
+        >
+
+            <button
+                type="button"
+                class="catalogue-modal-close"
+                id="catalogueModalClose"
+                aria-label="Close catalogue form"
+            >
+                ×
+            </button>
+
+
+            <p class="modal-eyebrow">
+                LITHOS COLLECTION 2026
+            </p>
+
+
+            <h2 id="catalogueModalTitle">
+                Download the Architectural Materials Catalogue.
+            </h2>
+
+
+            <p class="modal-description">
+                Explore the complete Lithos collection of natural stone,
+                architectural ceramics, custom fabrication and clay roof tile.
+            </p>
+
+
+            <form
+                id="catalogueForm"
+                class="catalogue-form"
+            >
+
+                <div class="form-group">
+
+                    <label for="catalogueName">
+                        Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="catalogueName"
+                        name="catalogueName"
+                        placeholder="John Doe"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="catalogueEmail">
+                        Business Email
+                    </label>
+
+                    <input
+                        type="email"
+                        id="catalogueEmail"
+                        name="catalogueEmail"
+                        placeholder="john@company.com"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="catalogueCompany">
+                        Company / Firm
+                    </label>
+
+                    <input
+                        type="text"
+                        id="catalogueCompany"
+                        name="catalogueCompany"
+                        placeholder="Company or firm name"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="cataloguePhone">
+                        Phone
+                        <span class="optional-label">
+                            OPTIONAL
+                        </span>
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="cataloguePhone"
+                        name="cataloguePhone"
+                        placeholder="+1 604 ..."
+                    >
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="catalogue-download-submit"
+                    id="catalogueSubmitButton"
+                >
+                    DOWNLOAD CATALOGUE
+                </button>
+
+
+                <p
+                    id="catalogueFormStatus"
+                    class="form-status"
+                    style="display:none;"
+                ></p>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         GOOGLE SHEETS + CATALOGUE LOGIC
+    ====================================================== -->
+
     <script>
-        const contactForm = document.getElementById("contactForm");
-        const submitButton = document.getElementById("submitButton");
-        const formStatus = document.getElementById("formStatus");
+
+        /*
+        ========================================================
+        CONFIGURATION
+        ========================================================
+        */
 
         const GOOGLE_SCRIPT_URL =
             "https://script.google.com/macros/s/AKfycbzZVu9nGH7v9ciswRgRI85ZGac0d6VDJRYIaD7nTl9dU3w_zpn6uyv_Yz-MsDb0mk9q0A/exec";
 
-        contactForm.addEventListener("submit", async function(event) {
 
-            event.preventDefault();
+        const CATALOGUE_URL =
+            "lithos-cantera-catalogue-2026.pdf";
 
-            submitButton.disabled = true;
-            submitButton.textContent = "SENDING...";
-            formStatus.style.display = "none";
 
-            const formData = {
-                name: document.getElementById("name").value.trim(),
-                email: document.getElementById("email").value.trim(),
-                company: document.getElementById("company").value.trim(),
-                project_location: document.getElementById("project_location").value.trim(),
-                material: document.getElementById("material").value,
-                project_details: document.getElementById("project_details").value.trim()
-            };
 
-            try {
+        /*
+        ========================================================
+        PROJECT / RFQ FORM
+        ========================================================
+        */
 
-                await fetch(GOOGLE_SCRIPT_URL, {
-                    method: "POST",
-                    mode: "no-cors",
-                    headers: {
-                        "Content-Type": "text/plain;charset=utf-8"
-                    },
-                    body: JSON.stringify(formData)
-                });
+        const contactForm =
+            document.getElementById("contactForm");
 
-                formStatus.textContent =
-                    "Thank you. Your request has been received.";
+        const submitButton =
+            document.getElementById("submitButton");
 
-                formStatus.style.display = "block";
+        const formStatus =
+            document.getElementById("formStatus");
 
-                contactForm.reset();
 
-            } catch (error) {
+        contactForm.addEventListener(
+            "submit",
+            async function(event) {
 
-                formStatus.textContent =
-                    "Something went wrong. Please try again.";
+                event.preventDefault();
 
-                formStatus.style.display = "block";
+
+                submitButton.disabled = true;
+                submitButton.textContent = "SENDING...";
+
+                formStatus.style.display = "none";
+
+
+                const quantity =
+                    document
+                        .getElementById("estimated_quantity")
+                        .value
+                        .trim();
+
+
+                const originalDetails =
+                    document
+                        .getElementById("project_details")
+                        .value
+                        .trim();
+
+
+                const combinedDetails =
+                    quantity
+                        ? `Estimated quantity: ${quantity}\n\n${originalDetails}`
+                        : originalDetails;
+
+
+                const formData = {
+
+                    name:
+                        document
+                            .getElementById("name")
+                            .value
+                            .trim(),
+
+                    email:
+                        document
+                            .getElementById("email")
+                            .value
+                            .trim(),
+
+                    company:
+                        document
+                            .getElementById("company")
+                            .value
+                            .trim(),
+
+                    project_location:
+                        document
+                            .getElementById("project_location")
+                            .value
+                            .trim(),
+
+                    material:
+                        document
+                            .getElementById("material")
+                            .value,
+
+                    project_details:
+                        combinedDetails,
+
+                    lead_type:
+                        "project_request"
+
+                };
+
+
+                try {
+
+                    await fetch(
+                        GOOGLE_SCRIPT_URL,
+                        {
+                            method: "POST",
+                            mode: "no-cors",
+                            headers: {
+                                "Content-Type":
+                                    "text/plain;charset=utf-8"
+                            },
+                            body: JSON.stringify(formData)
+                        }
+                    );
+
+
+                    formStatus.textContent =
+                        "Thank you. Your request has been received.";
+
+                    formStatus.style.display =
+                        "block";
+
+
+                    contactForm.reset();
+
+
+                } catch (error) {
+
+                    formStatus.textContent =
+                        "Something went wrong. Please try again.";
+
+                    formStatus.style.display =
+                        "block";
+
+                }
+
+
+                submitButton.disabled = false;
+
+                submitButton.textContent =
+                    "SUBMIT REQUEST";
+
             }
+        );
 
-            submitButton.disabled = false;
-            submitButton.textContent = "SUBMIT REQUEST";
-        });
+
+
+        /*
+        ========================================================
+        CATALOGUE MODAL
+        ========================================================
+        */
+
+        const catalogueModal =
+            document.getElementById("catalogueModal");
+
+        const catalogueModalClose =
+            document.getElementById("catalogueModalClose");
+
+        const catalogueModalBackdrop =
+            document.getElementById("catalogueModalBackdrop");
+
+        const catalogueOpenButtons =
+            document.querySelectorAll(
+                ".open-catalogue-modal"
+            );
+
+
+        function openCatalogueModal() {
+
+            catalogueModal.classList.add("is-open");
+
+            catalogueModal.setAttribute(
+                "aria-hidden",
+                "false"
+            );
+
+            document.body.classList.add(
+                "modal-open"
+            );
+
+
+            setTimeout(
+                function() {
+
+                    document
+                        .getElementById("catalogueName")
+                        .focus();
+
+                },
+                100
+            );
+
+        }
+
+
+        function closeCatalogueModal() {
+
+            catalogueModal.classList.remove("is-open");
+
+            catalogueModal.setAttribute(
+                "aria-hidden",
+                "true"
+            );
+
+            document.body.classList.remove(
+                "modal-open"
+            );
+
+        }
+
+
+        catalogueOpenButtons.forEach(
+            function(button) {
+
+                button.addEventListener(
+                    "click",
+                    openCatalogueModal
+                );
+
+            }
+        );
+
+
+        catalogueModalClose.addEventListener(
+            "click",
+            closeCatalogueModal
+        );
+
+
+        catalogueModalBackdrop.addEventListener(
+            "click",
+            closeCatalogueModal
+        );
+
+
+        document.addEventListener(
+            "keydown",
+            function(event) {
+
+                if (
+                    event.key === "Escape" &&
+                    catalogueModal.classList.contains("is-open")
+                ) {
+
+                    closeCatalogueModal();
+
+                }
+
+            }
+        );
+
+
+
+        /*
+        ========================================================
+        CATALOGUE LEAD FORM
+        ========================================================
+        */
+
+        const catalogueForm =
+            document.getElementById("catalogueForm");
+
+        const catalogueSubmitButton =
+            document.getElementById(
+                "catalogueSubmitButton"
+            );
+
+        const catalogueFormStatus =
+            document.getElementById(
+                "catalogueFormStatus"
+            );
+
+
+        catalogueForm.addEventListener(
+            "submit",
+            async function(event) {
+
+                event.preventDefault();
+
+
+                catalogueSubmitButton.disabled =
+                    true;
+
+                catalogueSubmitButton.textContent =
+                    "PREPARING CATALOGUE...";
+
+                catalogueFormStatus.style.display =
+                    "none";
+
+
+                const catalogueName =
+                    document
+                        .getElementById("catalogueName")
+                        .value
+                        .trim();
+
+
+                const catalogueEmail =
+                    document
+                        .getElementById("catalogueEmail")
+                        .value
+                        .trim();
+
+
+                const catalogueCompany =
+                    document
+                        .getElementById("catalogueCompany")
+                        .value
+                        .trim();
+
+
+                const cataloguePhone =
+                    document
+                        .getElementById("cataloguePhone")
+                        .value
+                        .trim();
+
+
+
+                /*
+                We intentionally preserve the fields already used
+                by the current Google Apps Script.
+
+                This means the catalogue lead can be captured
+                without changing the existing backend first.
+                */
+
+                const catalogueLeadData = {
+
+                    name:
+                        catalogueName,
+
+                    email:
+                        catalogueEmail,
+
+                    company:
+                        catalogueCompany,
+
+                    project_location:
+                        "",
+
+                    material:
+                        "catalogue_download",
+
+                    project_details:
+                        cataloguePhone
+                            ? `Catalogue download request. Phone: ${cataloguePhone}`
+                            : "Catalogue download request.",
+
+                    phone:
+                        cataloguePhone,
+
+                    lead_type:
+                        "catalogue_download"
+
+                };
+
+
+                try {
+
+                    await fetch(
+                        GOOGLE_SCRIPT_URL,
+                        {
+                            method: "POST",
+                            mode: "no-cors",
+                            headers: {
+                                "Content-Type":
+                                    "text/plain;charset=utf-8"
+                            },
+                            body:
+                                JSON.stringify(
+                                    catalogueLeadData
+                                )
+                        }
+                    );
+
+
+                    /*
+                    Start catalogue download.
+                    */
+
+                    const downloadLink =
+                        document.createElement("a");
+
+                    downloadLink.href =
+                        CATALOGUE_URL;
+
+                    downloadLink.download =
+                        "Lithos-Cantera-Catalogue-2026.pdf";
+
+                    document.body.appendChild(
+                        downloadLink
+                    );
+
+                    downloadLink.click();
+
+                    downloadLink.remove();
+
+
+                    catalogueFormStatus.textContent =
+                        "Your catalogue is downloading.";
+
+                    catalogueFormStatus.style.display =
+                        "block";
+
+
+                    catalogueForm.reset();
+
+
+                    setTimeout(
+                        closeCatalogueModal,
+                        1800
+                    );
+
+
+                } catch (error) {
+
+                    catalogueFormStatus.textContent =
+                        "Something went wrong. Please try again.";
+
+                    catalogueFormStatus.style.display =
+                        "block";
+
+                }
+
+
+                catalogueSubmitButton.disabled =
+                    false;
+
+                catalogueSubmitButton.textContent =
+                    "DOWNLOAD CATALOGUE";
+
+            }
+        );
+
     </script>
 
+
 </body>
+
 </html>
